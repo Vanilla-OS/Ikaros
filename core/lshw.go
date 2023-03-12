@@ -36,12 +36,16 @@ func (l LshwParser) GetLshw(group string) []Device {
 		return nil
 	}
 
+	pkgManager := GetPackageManager()
+
 	var devices []Device
 	for _, device := range data {
 		product := device["product"].(string)
 		vendor := device["vendor"].(string)
 		businfo := device["businfo"].(string)
-		devices = append(devices, Device{product, vendor, businfo})
+		device := Device{product, vendor, businfo, nil}
+		device.Drivers = pkgManager.ListDrivers(device)
+		devices = append(devices, device)
 	}
 	return devices
 }
