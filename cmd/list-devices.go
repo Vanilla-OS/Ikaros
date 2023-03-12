@@ -35,11 +35,17 @@ func listDevices(cmd *cobra.Command, args []string) error {
 		return nil
 	}
 
+	spinner, _ := cmdr.Spinner.Start("Listing devices and drivers...")
 	devicesMap := core.LshwParser{}.GetDevices()
+	spinner.Success()
+
 	for group, devices := range devicesMap {
 		fmt.Printf(strings.Title(group) + " devices:\n")
 		for _, device := range devices {
-			fmt.Printf("- %s\n\tVendor: %s\n\tBusinfo: %s\n", device.Product, device.Vendor, device.Businfo)
+			fmt.Printf("- %s\n", device.Product)
+			fmt.Printf("  Vendor: %s\n", device.Vendor)
+			fmt.Printf("  Businfo: %s\n", device.Businfo)
+			fmt.Printf("  Drivers: %s\n", strings.Join(device.Drivers, ", "))
 		}
 		fmt.Println()
 	}
