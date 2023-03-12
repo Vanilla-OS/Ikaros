@@ -103,21 +103,21 @@ func (a AptPackageManager) listPackages(pattern string) []string {
 
 func (a AptPackageManager) getPackageModaliases(pkg string) string {
 	cmd := exec.Command("apt-cache", "show", pkg)
-	var out bytes.Buffer
-	cmd.Stdout = &out
-	err := cmd.Run()
+	out, err := cmd.Output()
 	if err != nil {
 		fmt.Println(err)
+		return ""
 	}
 
-	scanner := bufio.NewScanner(&out)
+	res := string(out)
+	scanner := bufio.NewScanner(strings.NewReader(res))
 	for scanner.Scan() {
 		line := scanner.Text()
 		if strings.HasPrefix(line, "Modaliases:") {
-			return strings.Split(line, ":")[1]
+			modaliases := strings.TrimSpace(strings.TrimPrefix(line, "Modaliases:"))
+			return modaliases
 		}
 	}
-
 	return ""
 }
 
@@ -135,8 +135,8 @@ func (a AptPackageManager) matchBusinfo(modalias, businfo string) bool {
 	vendor := vendorProduct[1]
 	product := vendorProduct[2]
 
-	businfoRe := regexp.MustCompile(`pci@0000:(.+):(.+)\.0`)
-	businfo = businfoRe.FindStringSubmatch(businfo)[1]
+	businfoRe := regexp.MustCompile(`pci@0000:(.+?):(.+).0`)
+	businfo = businfoRe.FindStringSubmatch(businfo)[0]
 	if businfo == "" {
 		return false
 	}
