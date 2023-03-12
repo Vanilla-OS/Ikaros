@@ -25,9 +25,6 @@ func main() {
 	listDevicesCmd := cmd.NewListDevicesCmd()
 	root.AddCommand(listDevicesCmd)
 
-	listDriversCmd := cmd.NewListDriversCmd()
-	root.AddCommand(listDriversCmd)
-
 	installCmd := cmd.NewInstallCmd()
 	root.AddCommand(installCmd)
 
