@@ -1,0 +1,24 @@
+ikaros:
+  use: "ikaros"
+  long: "Ikaros is a command line tool for managing drivers for your devices"
+  short: "Ikaros manages drivers for your devices"
+
+list-devices:
+  use: "list-devices"
+  long: "List all devices"
+  short: "List devices"
+
+list-drivers:
+  use: "list-drivers"
+  long: "List all drivers"
+  short: "List drivers"
+
+install:
+  use: "install"
+  long: "Install a driver"
+  short: "Install a driver"
+
+auto-install:
+  use: "auto-install"
+  long: "Auto install the correct drivers for all devices"
+  short: "Auto install correct drivers"
