@@ -12,13 +12,22 @@ list-drivers:
   use: "list-drivers"
   long: "List all drivers"
   short: "List drivers"
+  startListing: "Listing devices and drivers..."
+  successfulListing: "Successfully listed devices and drivers"
 
 install:
   use: "install"
   long: "Install a driver"
   short: "Install a driver"
+  startInstallation: "Installing driver..."
+  failedGetDevice: "Failed to get device"
+  failedInstallation: "Failed to install driver"
+  successfulInstallation: "Successfully installed driver"
 
 auto-install:
   use: "auto-install"
   long: "Auto install the correct drivers for all devices"
   short: "Auto install correct drivers"
+  startInstallation: "Auto installing drivers for all devices..."
+  failedInstallation: "Failed to install drivers"
+  successfulInstallation: "Successfully installed drivers for all devices"

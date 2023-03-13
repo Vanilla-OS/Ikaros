@@ -1,8 +1,6 @@
 package cmd
 
 import (
-	"fmt"
-
 	"github.com/spf13/cobra"
 	"github.com/vanilla-os/ikaros/core"
 	"github.com/vanilla-os/orchid/cmdr"
@@ -22,13 +20,12 @@ func NewAutoInstallCmd() *cmdr.Command {
 }
 
 func autoInstall(cmd *cobra.Command, args []string) error {
-	spinner, _ := cmdr.Spinner.Start("Auto installing drivers for all devices...")
+	spinner, _ := cmdr.Spinner.Start(ikaros.Trans("auto-install.startInstallation"))
 	err := core.DriversManager{}.AutoInstallDrivers()
 	if err != nil {
-		spinner.Fail()
+		spinner.Fail(ikaros.Trans("auto-install.failedInstallation"))
 		return err
 	}
-	spinner.Success()
-	fmt.Println("All drivers installed successfully!")
+	spinner.Success(ikaros.Trans("auto-install.successfulInstallation"))
 	return nil
 }

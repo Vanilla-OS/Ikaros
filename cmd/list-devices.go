@@ -35,9 +35,9 @@ func listDevices(cmd *cobra.Command, args []string) error {
 		return nil
 	}
 
-	spinner, _ := cmdr.Spinner.Start("Listing devices and drivers...")
+	spinner, _ := cmdr.Spinner.Start(ikaros.Trans("list-devices.startListing"))
 	devicesMap := core.DriversManager{}.GetDevices()
-	spinner.Success()
+	spinner.Success(ikaros.Trans("list-devices.successfulListing"))
 
 	for group, devices := range devicesMap {
 		fmt.Printf(strings.Title(group) + " devices:\n")
