@@ -1,4 +1,4 @@
 {
     "pkgmanager": "apt",
-    "debug": true
+    "debug": false
 }
