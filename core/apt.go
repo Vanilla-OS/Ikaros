@@ -58,14 +58,18 @@ func (a AptPackageManager) ListDrivers(device Device) []string {
 	return drivers
 }
 
-func (a *AptPackageManager) InstallDriver(driver string) error {
-	cmd := exec.Command("sudo", "apt-get", "install", driver)
-	var out bytes.Buffer
-	cmd.Stdout = &out
+func (a *AptPackageManager) InstallDriver(device Device) error {
+	drivers := a.ListDrivers(device)
+	if len(drivers) == 0 {
+		return fmt.Errorf("no driver found for %s", device.Product)
+	}
+
+	cmd := exec.Command("apt", "install", "-y", drivers[0])
 	err := cmd.Run()
 	if err != nil {
 		return err
 	}
+
 	return nil
 }
 

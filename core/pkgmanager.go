@@ -6,7 +6,7 @@ import (
 
 type PackageManager interface {
 	ListDrivers(device Device) []string
-	InstallDriver(driver string) error
+	InstallDriver(device Device) error
 }
 
 func GetPackageManager() PackageManager {
@@ -18,12 +18,12 @@ func GetPackageManager() PackageManager {
 	return nil
 }
 
-func InstallDriver(driver string) error {
+func InstallDriver(device Device) error {
 	pkgManager := GetPackageManager()
 	if pkgManager == nil {
 		return fmt.Errorf("no package manager found")
 	}
-	return pkgManager.InstallDriver(driver)
+	return pkgManager.InstallDriver(device)
 }
 
 func ListDrivers(device Device) []string {
