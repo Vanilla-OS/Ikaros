@@ -10,12 +10,12 @@ import (
 )
 
 type AptPackageManager struct {
-	DRIVER_PREFIXES map[string]string
+	driverPrefixes map[string]string
 }
 
 func NewAptPackageManager() *AptPackageManager {
 	return &AptPackageManager{
-		DRIVER_PREFIXES: map[string]string{
+		driverPrefixes: map[string]string{
 			"GeForce GTX": "nvidia-driver",
 			"GeForce RTX": "nvidia-driver",
 		},
@@ -25,7 +25,7 @@ func NewAptPackageManager() *AptPackageManager {
 func (a AptPackageManager) ListDrivers(device Device) []string {
 	drivers := []string{}
 
-	for prefix, pattern := range a.DRIVER_PREFIXES {
+	for prefix, pattern := range a.driverPrefixes {
 		if strings.Contains(device.Product, prefix) {
 			drivers = append(drivers, a.listPackagesByBusinfo(pattern, device.Businfo)...)
 		}
