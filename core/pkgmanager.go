@@ -18,7 +18,12 @@ func GetPackageManager() PackageManager {
 	return nil
 }
 
-func InstallDriver(device Device) error {
+func PkgInstallDriver(device Device) error {
+	if GetDebug() {
+		fmt.Printf("Fake installing driver for device %s\n", device.ID)
+		return nil
+	}
+
 	pkgManager := GetPackageManager()
 	if pkgManager == nil {
 		return fmt.Errorf("no package manager found")
@@ -26,7 +31,7 @@ func InstallDriver(device Device) error {
 	return pkgManager.InstallDriver(device)
 }
 
-func ListDrivers(device Device) []string {
+func PkgListDrivers(device Device) []string {
 	pkgManager := GetPackageManager()
 	if pkgManager == nil {
 		return nil

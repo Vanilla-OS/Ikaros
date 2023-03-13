@@ -8,6 +8,7 @@ import (
 
 type Config struct {
 	PkgManager string `json:"pkgmanager"`
+	Debug      bool   `json:"debug"`
 }
 
 var Cnf *Config
@@ -30,4 +31,8 @@ func init() {
 
 func GetPkgManager() string {
 	return Cnf.PkgManager
+}
+
+func GetDebug() bool {
+	return Cnf.Debug
 }

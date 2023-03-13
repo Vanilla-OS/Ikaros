@@ -1,3 +1,4 @@
 {
-    "pkgmanager": "apt"
+    "pkgmanager": "apt",
+    "debug": true
 }
