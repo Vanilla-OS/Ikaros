@@ -9,8 +9,8 @@ import (
 func NewAutoInstallCmd() *cmdr.Command {
 	cmd := cmdr.NewCommand(
 		"auto-install",
-		ikaros.Trans("auto-install.long"),
-		ikaros.Trans("auto-install.short"),
+		ikaros.Trans("autoInstall.long"),
+		ikaros.Trans("autoInstall.short"),
 		autoInstall,
 	)
 	cmd.Args = cobra.MatchAll(cobra.ExactArgs(1), cobra.OnlyValidArgs)
@@ -20,12 +20,12 @@ func NewAutoInstallCmd() *cmdr.Command {
 }
 
 func autoInstall(cmd *cobra.Command, args []string) error {
-	spinner, _ := cmdr.Spinner.Start(ikaros.Trans("auto-install.startInstallation"))
+	spinner, _ := cmdr.Spinner.Start(ikaros.Trans("autoInstall.startInstallation"))
 	err := core.DriversManager{}.AutoInstallDrivers()
 	if err != nil {
-		spinner.Fail(ikaros.Trans("auto-install.failedInstallation"))
+		spinner.Fail(ikaros.Trans("autoInstall.failedInstallation"))
 		return err
 	}
-	spinner.Success(ikaros.Trans("auto-install.successfulInstallation"))
+	spinner.Success(ikaros.Trans("autoInstall.successfulInstallation"))
 	return nil
 }

@@ -12,14 +12,14 @@ import (
 func NewListDevicesCmd() *cmdr.Command {
 	cmd := cmdr.NewCommand(
 		"list-devices",
-		ikaros.Trans("list-devices.long"),
-		ikaros.Trans("list-devices.short"),
+		ikaros.Trans("listDevices.long"),
+		ikaros.Trans("listDevices.short"),
 		listDevices,
 	).WithBoolFlag(
 		cmdr.NewBoolFlag(
 			"json",
 			"j",
-			ikaros.Trans("list-devices.json"),
+			ikaros.Trans("listDevices.json"),
 			false,
 		),
 	)
@@ -35,9 +35,9 @@ func listDevices(cmd *cobra.Command, args []string) error {
 		return nil
 	}
 
-	spinner, _ := cmdr.Spinner.Start(ikaros.Trans("list-devices.startListing"))
+	spinner, _ := cmdr.Spinner.Start(ikaros.Trans("listDevices.startListing"))
 	devicesMap := core.DriversManager{}.GetDevices()
-	spinner.Success(ikaros.Trans("list-devices.successfulListing"))
+	spinner.Success(ikaros.Trans("listDevices.successfulListing"))
 
 	for group, devices := range devicesMap {
 		fmt.Printf(strings.Title(group) + " devices:\n")
