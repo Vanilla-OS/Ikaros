@@ -1,0 +1,102 @@
+.TH IKAROS 1 "2023-03-13" "ikaros" "User Manual"
+.SH NAME
+.RS 4
+ikaros - Ikaros manages drivers for your devices
+.RE
+.SH SYNOPSIS
+.RS 4
+ikaros [command] [flags] [arguments]
+.RE
+.SH DESCRIPTION
+.RS 4
+Ikaros is a command line tool for managing drivers for your devices
+.RE
+.SH OPTIONS
+.SH IKAROS COMMANDS
+.RS 4
+\fBlist-devices\fP
+.RS 4
+List devices
+.PP
+.RE
+\fBinstall\fP
+.RS 4
+Install a driver
+.PP
+.RE
+\fBauto-install\fP
+.RS 4
+Auto install correct drivers
+.PP
+.RE
+.RE
+.SH AUTHORS
+.PP
+Written by Vanilla OS contributors\&.
+.SH REPORT BUGS TO
+.PP
+https://github\&.com/vanilla-os/ikaros/issues
+.SH LICENSE
+.PP
+GPLv3+: GNU GPL version 3 or later <http://gnu\&.org/licenses/gpl\&.html>\&.
+.SH IKAROS SUBCOMMANDS
+.SH SUBCOMMAND LIST-DEVICES
+.RS 4
+List devices
+.RE
+.SS SYNOPSIS
+.RS 4
+\fBlist-devices\fP [command] [flags] [arguments]
+.RE
+.SS DESCRIPTION
+.RS 4
+.TP 4
+List all devices
+.RE
+.SS OPTIONS
+  -j, --json   list-devices\&.json
+.PP
+.SS GLOBAL OPTIONS
+.SS EXAMPLES
+.RS 4
+ikaros list-devices
+.RE
+.SH SUBCOMMAND INSTALL
+.RS 4
+Install a driver
+.RE
+.SS SYNOPSIS
+.RS 4
+\fBinstall\fP [command] [flags] [arguments]
+.RE
+.SS DESCRIPTION
+.RS 4
+.TP 4
+Install a driver
+.RE
+.SS OPTIONS
+.SS GLOBAL OPTIONS
+.SS EXAMPLES
+.RS 4
+ikaros install
+.RE
+.SH SUBCOMMAND AUTO-INSTALL
+.RS 4
+Auto install correct drivers
+.RE
+.SS SYNOPSIS
+.RS 4
+\fBauto-install\fP [command] [flags] [arguments]
+.RE
+.SS DESCRIPTION
+.RS 4
+.TP 4
+Auto install the correct drivers for all devices
+.RE
+.SS OPTIONS
+.SS GLOBAL OPTIONS
+.SS EXAMPLES
+.RS 4
+ikaros auto-install
+.RE
+
