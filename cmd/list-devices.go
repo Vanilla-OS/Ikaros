@@ -42,7 +42,8 @@ func listDevices(cmd *cobra.Command, args []string) error {
 	for group, devices := range devicesMap {
 		fmt.Printf(strings.Title(group) + " devices:\n")
 		for _, device := range devices {
-			fmt.Printf("- %s\n", device.Product)
+			fmt.Printf("- ID: %s\n", device.ID)
+			fmt.Printf("  Product: %s\n", device.Product)
 			fmt.Printf("  Vendor: %s\n", device.Vendor)
 			fmt.Printf("  Businfo: %s\n", device.Businfo)
 			fmt.Printf("  Drivers: %s\n", strings.Join(device.Drivers, ", "))
