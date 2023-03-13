@@ -30,13 +30,13 @@ func NewListDevicesCmd() *cmdr.Command {
 
 func listDevices(cmd *cobra.Command, args []string) error {
 	if cmd.Flag("json").Changed {
-		devicesMap := core.LshwParser{}.GetDevicesAsJson()
+		devicesMap := core.DriversManager{}.GetDevicesAsJson()
 		fmt.Println(devicesMap)
 		return nil
 	}
 
 	spinner, _ := cmdr.Spinner.Start("Listing devices and drivers...")
-	devicesMap := core.LshwParser{}.GetDevices()
+	devicesMap := core.DriversManager{}.GetDevices()
 	spinner.Success()
 
 	for group, devices := range devicesMap {
