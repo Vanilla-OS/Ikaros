@@ -16,6 +16,10 @@ type AptPackageManager struct {
 func NewAptPackageManager() *AptPackageManager {
 	return &AptPackageManager{
 		driverPrefixes: map[string]string{
+			// this list can be used to simplify the search, if we know
+			// the driver name is always the same for a given device
+			// writing it here avoids running apt-cache search
+			// based on the device name
 			"GeForce GTX": "nvidia-driver",
 			"GeForce RTX": "nvidia-driver",
 		},
@@ -28,12 +32,19 @@ func (a AptPackageManager) ListDrivers(device Device) []string {
 	for prefix, pattern := range a.driverPrefixes {
 		if strings.Contains(device.Product, prefix) {
 			drivers = append(drivers, a.listPackagesByBusinfo(pattern, device.Businfo)...)
+			return drivers
 		}
 	}
 
-	if len(drivers) == 0 {
-		if a.listPackages(device.Product) != nil {
-			drivers = append(drivers, a.listPackages(device.Product)...)
+	// the following needs to be improved, it's just a quick hack
+	for _, word := range strings.Fields(device.Product) {
+		if !regexp.MustCompile(`^[a-zA-Z0-9-]{2,}$`).MatchString(word) {
+			continue
+		}
+
+		pattern := strings.ToLower(word)
+		if packages := a.listPackagesByBusinfo(pattern, device.Businfo); packages != nil {
+			drivers = append(drivers, packages...)
 		}
 	}
 
