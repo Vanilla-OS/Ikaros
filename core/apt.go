@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"os/exec"
 	"regexp"
+	"sort"
 	"strings"
 )
 
@@ -31,22 +32,28 @@ func (a AptPackageManager) ListDrivers(device Device) []string {
 
 	for prefix, pattern := range a.driverPrefixes {
 		if strings.Contains(device.Product, prefix) {
-			drivers = append(drivers, a.listPackagesByBusinfo(pattern, device.Businfo)...)
-			return drivers
+			drivers = a.listPackagesByBusinfo(pattern, device.Businfo)
+			break
 		}
 	}
 
-	// the following needs to be improved, it's just a quick hack
-	for _, word := range strings.Fields(device.Product) {
-		if !regexp.MustCompile(`^[a-zA-Z0-9-]{2,}$`).MatchString(word) {
-			continue
-		}
+	if len(drivers) == 0 {
+		// the following needs to be improved, it's just a quick hack
+		for _, word := range strings.Fields(device.Product)[:2] {
+			if !regexp.MustCompile(`^[a-zA-Z0-9-]{2,}$`).MatchString(word) {
+				continue
+			}
 
-		pattern := strings.ToLower(word)
-		if packages := a.listPackagesByBusinfo(pattern, device.Businfo); packages != nil {
-			drivers = append(drivers, packages...)
+			pattern := strings.ToLower(word)
+			if packages := a.listPackagesByBusinfo(pattern, device.Businfo); packages != nil {
+				drivers = append(drivers, packages...)
+			}
 		}
 	}
+
+	sort.Slice(drivers, func(i, j int) bool {
+		return drivers[i] > drivers[j]
+	})
 
 	return drivers
 }
