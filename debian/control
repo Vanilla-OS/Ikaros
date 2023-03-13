@@ -1,0 +1,20 @@
+Source: ikaros
+Section: devel
+Priority: extra
+Maintainer: Mirko Brombin <send@mirko.pm>
+Uploaders: Mirko Brombin <send@mirko.pm>
+Build-Depends: debhelper (>= 9),
+               dh-golang,
+               golang-go
+Standards-Version: 3.9.6
+Homepage: https://github.com/vanilla-os/ikaros
+Vcs-Browser: https://github.com/vanilla-os/ikaros
+Vcs-Git: git://github.com/vanilla-os/ikaros.git
+
+Package: ikaros
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         lshw
+Built-Using: ${misc:Built-Using}
+Description: Ikaros is a drivers backend for Vanilla OS.

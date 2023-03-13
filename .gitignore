@@ -1,1 +1,13 @@
+/debian/.debhelper
+/debian/ikaros
+/debian/debhelper-build-stamp
+/debian/files
+/debian/ikaros.substvars
+/obj-x86_64-linux-gnu
+.envrc
+ikaros
+*.service
+*.mount
+build.sh
+dist/
 ikaros

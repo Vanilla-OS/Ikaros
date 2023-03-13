@@ -1,0 +1,4 @@
+config/config.json /usr/share/ikaros/
+man/ikaros.1 /usr/share/man/man1
+man/es/ikaros.1 /usr/share/man/es/man1
+man/sv/ikaros.1 /usr/share/man/sv/man1
