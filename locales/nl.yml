@@ -8,6 +8,7 @@ listDevices:
   use: "list-devices"
   long: "Lijst van alle apparaten tonen"
   short: "Apparatenlijst"
+<<<<<<< HEAD
   json: "JSON-uitvoer"
   startListing: "Lijst maken van apparaten en stuurprogramma's…"
   successfulListing: "Lijst van apparaten en stuurprogramma's succesvol gemaakt"
