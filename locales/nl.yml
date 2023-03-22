@@ -1,29 +1,30 @@
 ikaros:
   use: "ikaros"
-  long: "Ikaros is a command line tool for managing drivers for your devices"
-  short: "Ikaros manages drivers for your devices"
+  long: "Ikaros is een opdrachtregelprogramma voor het beheer van stuurprogramma's\
+    \ voor uw apparaten"
+  short: "Ikaros beheert de drivers voor uw apparaten"
 
 listDevices:
   use: "list-devices"
   long: "Lijst van alle apparaten tonen"
   short: "Apparatenlijst"
-  json: "Output as JSON"
-  startListing: "Listing devices and drivers..."
-  successfulListing: "Successfully listed devices and drivers"
+  json: "JSON-uitvoer"
+  startListing: "Lijst maken van apparaten en stuurprogramma's…"
+  successfulListing: "Lijst van apparaten en stuurprogramma's succesvol gemaakt"
 
 install:
   use: "install"
-  long: "Install a driver"
-  short: "Install a driver"
+  long: "Stuurprogramma installeren"
+  short: "Stuurprogramma installeren"
   startInstallation: "Stuurprogramma installeren…"
-  failedGetDevice: "Failed to get device"
-  failedInstallation: "Failed to install driver"
-  successfulInstallation: "Successfully installed driver"
+  failedGetDevice: "Apparaat verkrijgen mislukt"
+  failedInstallation: "Stuurprogramma installeren mislukt"
+  successfulInstallation: "Stuurprogramma succesvol geïnstalleerd"
 
 autoInstall:
   use: "auto-install"
-  long: "Auto install the correct drivers for all devices"
-  short: "Auto install correct drivers"
-  startInstallation: "Auto installing drivers for all devices..."
-  failedInstallation: "Failed to install drivers"
-  successfulInstallation: "Successfully installed drivers for all devices"
+  long: "Automatisch de juiste stuurprogramma's voor alle apparaten installeren"
+  short: "Automatisch juiste stuurprogramma's installeren"
+  startInstallation: "Stuurprogramma's voor alle apparaten automatisch installeren…"
+  failedInstallation: "Stuurprogramma's installeren mislukt"
+  successfulInstallation: "Stuurprogramma's voor alle apparaten succesvol geïnstalleerd"
