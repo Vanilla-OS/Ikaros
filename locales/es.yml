@@ -1,10 +1,10 @@
 ikaros:
-  use: ""
+  use: "ikaros"
   long: "Ikaros is a command line tool for managing drivers for your devices"
   short: "Ikaros manages drivers for your devices"
 
 listDevices:
-  use: ""
+  use: "list-devices"
   long: "List all devices"
   short: "List devices"
   json: "Output as JSON"
@@ -12,7 +12,7 @@ listDevices:
   successfulListing: "Successfully listed devices and drivers"
 
 install:
-  use: ""
+  use: "install"
   long: "Install a driver"
   short: "Install a driver"
   startInstallation: "Installing driver..."
@@ -21,7 +21,7 @@ install:
   successfulInstallation: "Successfully installed driver"
 
 autoInstall:
-  use: ""
+  use: "auto-install"
   long: "Auto install the correct drivers for all devices"
   short: "Auto install correct drivers"
   startInstallation: "Auto installing drivers for all devices..."
