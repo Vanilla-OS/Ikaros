@@ -5,8 +5,8 @@ ikaros:
 
 listDevices:
   use: "list-devices"
-  long: "List all devices"
-  short: "List devices"
+  long: "Lijst van alle apparaten tonen"
+  short: "Apparatenlijst"
   json: "Output as JSON"
   startListing: "Listing devices and drivers..."
   successfulListing: "Successfully listed devices and drivers"
@@ -15,7 +15,7 @@ install:
   use: "install"
   long: "Install a driver"
   short: "Install a driver"
-  startInstallation: "Installing driver..."
+  startInstallation: "Stuurprogramma installeren…"
   failedGetDevice: "Failed to get device"
   failedInstallation: "Failed to install driver"
   successfulInstallation: "Successfully installed driver"
