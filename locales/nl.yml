@@ -1,0 +1,29 @@
+ikaros:
+  use: "ikaros"
+  long: "Ikaros is a command line tool for managing drivers for your devices"
+  short: "Ikaros manages drivers for your devices"
+
+listDevices:
+  use: "list-devices"
+  long: "Lijst van alle apparaten tonen"
+  short: "Apparatenlijst"
+  json: "Output as JSON"
+  startListing: "Listing devices and drivers..."
+  successfulListing: "Successfully listed devices and drivers"
+
+install:
+  use: "install"
+  long: "Install a driver"
+  short: "Install a driver"
+  startInstallation: "Stuurprogramma installeren…"
+  failedGetDevice: "Failed to get device"
+  failedInstallation: "Failed to install driver"
+  successfulInstallation: "Successfully installed driver"
+
+autoInstall:
+  use: "auto-install"
+  long: "Auto install the correct drivers for all devices"
+  short: "Auto install correct drivers"
+  startInstallation: "Auto installing drivers for all devices..."
+  failedInstallation: "Failed to install drivers"
+  successfulInstallation: "Successfully installed drivers for all devices"
