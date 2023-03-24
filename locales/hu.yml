@@ -1,7 +1,7 @@
 ikaros:
   use: "ikaros"
-  long: "Ikaros is a command line tool for managing drivers for your devices"
-  short: "Ikaros manages drivers for your devices"
+  long: "Az Ikaros egy parancssoros eszköz az eszközök illesztőprogramjainak kezeléséhez"
+  short: "Az Ikaros kezeli az eszközök illesztőprogramjait"
 
 listDevices:
   use: "list-devices"
