@@ -1,29 +1,30 @@
 ikaros:
   use: "ikaros"
-  long: "Ikaros is a command line tool for managing drivers for your devices"
-  short: "Ikaros manages drivers for your devices"
+  long: "Ikaros este un instrument de linie de comandă pentru gestionarea driverelor\
+    \ pentru dispozitivele dvs"
+  short: "Ikaros gestionează drivere pentru dispozitivele dvs"
 
 listDevices:
   use: "list-devices"
-  long: "List all devices"
-  short: "List devices"
-  json: "Output as JSON"
-  startListing: "Listing devices and drivers..."
-  successfulListing: "Successfully listed devices and drivers"
+  long: "Listați toate dispozitivele"
+  short: "Listați dispozitivele"
+  json: "Ieșire ca JSON"
+  startListing: "Se afișează dispozitive și drivere..."
+  successfulListing: "Dispozitive și drivere listate cu succes"
 
 install:
   use: "install"
-  long: "Install a driver"
-  short: "Install a driver"
-  startInstallation: "Installing driver..."
-  failedGetDevice: "Failed to get device"
-  failedInstallation: "Failed to install driver"
-  successfulInstallation: "Successfully installed driver"
+  long: "Instalați un driver"
+  short: "Instalați un driver"
+  startInstallation: "Se instalează driverul..."
+  failedGetDevice: "Nu s-a putut obține dispozitivul"
+  failedInstallation: "A eșuat instalarea driverului"
+  successfulInstallation: "Driver instalat cu succes"
 
 autoInstall:
   use: "auto-install"
-  long: "Auto install the correct drivers for all devices"
-  short: "Auto install correct drivers"
-  startInstallation: "Auto installing drivers for all devices..."
-  failedInstallation: "Failed to install drivers"
-  successfulInstallation: "Successfully installed drivers for all devices"
+  long: "Instalați automat driverele corecte pentru toate dispozitivele"
+  short: "Instalați automat driverele corecte"
+  startInstallation: "Se instalează automat drivere pentru toate dispozitivele..."
+  failedInstallation: "A eșuat instalarea driverelor"
+  successfulInstallation: "Drivere instalate cu succes pentru toate dispozitivele"
