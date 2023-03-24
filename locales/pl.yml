@@ -1,0 +1,30 @@
+ikaros:
+  use: "ikaros"
+  long: "Ikaros jest narzędziem do zarządzania sterownikami dla urządzeń z poziomu\
+    \ wiersza poleceń"
+  short: "Ikaros zarządza sterownikami dla Twoich urządzeń"
+
+listDevices:
+  use: "list-devices"
+  long: "Lista wszystkich urządzeń"
+  short: "Lista urządzeń"
+  json: "Wyjście jako JSON"
+  startListing: "Wymienianie urządzeń i sterowników..."
+  successfulListing: "Listowanie urządzeń i sterowników zakończone sukcesem"
+
+install:
+  use: "install"
+  long: "Zainstaluj sterownik"
+  short: "Zainstaluj sterownik"
+  startInstallation: "Instalacja sterownika..."
+  failedGetDevice: "Nie udało się uzyskać urządzenia"
+  failedInstallation: "Nie udało się zainstalować sterownika"
+  successfulInstallation: "Pomyślnie zainstalowano sterownik"
+
+autoInstall:
+  use: "auto-install"
+  long: "Automatyczna instalacja właściwych sterowników dla wszystkich urządzeń"
+  short: "Automatyczna instalacja prawidłowych sterowników"
+  startInstallation: "Automatyczna instalacja sterowników dla wszystkich urządzeń..."
+  failedInstallation: "Nie udało się zainstalować sterowników"
+  successfulInstallation: "Pomyślnie zainstalowano sterowniki dla wszystkich urządzeń"

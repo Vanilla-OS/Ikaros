@@ -1,29 +1,30 @@
 ikaros:
   use: "ikaros"
-  long: "Ikaros is a command line tool for managing drivers for your devices"
-  short: "Ikaros manages drivers for your devices"
+  long: "Ikaros es una herramienta de línea de comandos para gestionar los controladores\
+    \ de tus dispositivos"
+  short: "Ikaros gestiona los controladores de tus dispositivos"
 
 listDevices:
   use: "list-devices"
-  long: "List all devices"
-  short: "List devices"
-  json: "Output as JSON"
-  startListing: "Listing devices and drivers..."
-  successfulListing: "Successfully listed devices and drivers"
+  long: "Lista de dispositivos"
+  short: "Listar dispositivos"
+  json: "Salida como JSON"
+  startListing: "Listado de dispositivos y controladores..."
+  successfulListing: "Dispositivos y controladores listados de forma correcta"
 
 install:
   use: "install"
-  long: "Install a driver"
-  short: "Install a driver"
-  startInstallation: "Installing driver..."
-  failedGetDevice: "Failed to get device"
-  failedInstallation: "Failed to install driver"
-  successfulInstallation: "Successfully installed driver"
+  long: "Instalar un controlador"
+  short: "Instalar un controlador"
+  startInstallation: "Instalando controlador..."
+  failedGetDevice: "Error al obtener el dispositivo"
+  failedInstallation: "Error al instalar el controlador"
+  successfulInstallation: "Controlador instalado correctamente"
 
 autoInstall:
   use: "auto-install"
-  long: "Auto install the correct drivers for all devices"
-  short: "Auto install correct drivers"
-  startInstallation: "Auto installing drivers for all devices..."
-  failedInstallation: "Failed to install drivers"
-  successfulInstallation: "Successfully installed drivers for all devices"
+  long: "Instala automáticamente los controladores correctos para todos los dispositivos"
+  short: "Instalar automáticamente los controladores correctos"
+  startInstallation: "Instalación automática de controladores para todos los dispositivos..."
+  failedInstallation: "Error al instalar los controladores"
+  successfulInstallation: "Controladores instalados correctamente para todos los dispositivos"

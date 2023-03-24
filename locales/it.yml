@@ -1,0 +1,30 @@
+ikaros:
+  use: "ikaros"
+  long: "Ikaros è uno strumento a riga di comando per la gestione dei driver dei dispositivi"
+  short: "Ikaros gestisce i driver dei dispositivi"
+
+listDevices:
+  use: "list-devices"
+  long: "Elenco di tutti i dispositivi"
+  short: "Elenco dispositivi"
+  json: "Output come JSON"
+  startListing: "Elencando i dispositivi e i driver..."
+  successfulListing: "I dispositivi e i driver sono stati elencati con successo"
+
+install:
+  use: "install"
+  long: "Installa un driver"
+  short: "Installa un driver"
+  startInstallation: "Installazione del driver in corso..."
+  failedGetDevice: "Impossibile ottenere il dispositivo"
+  failedInstallation: "Impossibile installare il driver"
+  successfulInstallation: "Il driver è stato installato con successo"
+
+autoInstall:
+  use: "auto-install"
+  long: "Installa automaticamente i driver corretti per tutti i dispositivi"
+  short: "Installa automaticamente i driver corretti"
+  startInstallation: "Installando automaticamente i driver per tutti i dispositivi..."
+  failedInstallation: "Impossibile installare i driver"
+  successfulInstallation: "I driver sono stati installati con successo per tutti i\
+    \ dispositivi"

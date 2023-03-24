@@ -1,0 +1,30 @@
+ikaros:
+  use: "ikaros"
+  long: "Ikaros, cihazlarınızın sürücülerini yönetmek için kullanılan bir komut satırı\
+    \ aracıdır"
+  short: "Ikaros cihazlarınız için sürücüleri yönetir"
+
+listDevices:
+  use: "list-devices"
+  long: "Tüm cihazları listele"
+  short: "Cihazları listeleyin"
+  json: "JSON olarak çıktı"
+  startListing: "Aygıtlar ve sürücüler listeleniyor..."
+  successfulListing: "Aygıtlar ve sürücüler başarıyla listelendi"
+
+install:
+  use: "install"
+  long: "Bir sürücü yükleyin"
+  short: "Bir sürücü yükleyin"
+  startInstallation: "Sürücü yükleniyor ..."
+  failedGetDevice: "Cihaz alınamadı"
+  failedInstallation: "Sürücü yüklenemedi"
+  successfulInstallation: "Sürücü başarıyla yüklendi"
+
+autoInstall:
+  use: "auto-install"
+  long: "Tüm aygıtlar için doğru sürücüleri otomatik olarak yükleyin"
+  short: "Doğru sürücüleri otomatik yükle"
+  startInstallation: "Tüm cihazlar için sürücüleri otomatik yükleme..."
+  failedInstallation: "Sürücüler yüklenemedi"
+  successfulInstallation: "Tüm aygıtlar için sürücüler başarıyla yüklendi"
