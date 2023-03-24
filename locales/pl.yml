@@ -1,29 +1,30 @@
 ikaros:
   use: "ikaros"
-  long: "Ikaros is a command line tool for managing drivers for your devices"
-  short: "Ikaros manages drivers for your devices"
+  long: "Ikaros jest narzędziem do zarządzania sterownikami dla urządzeń z poziomu\
+    \ wiersza poleceń"
+  short: "Ikaros zarządza sterownikami dla Twoich urządzeń"
 
 listDevices:
   use: "list-devices"
-  long: "List all devices"
-  short: "List devices"
-  json: "Output as JSON"
-  startListing: "Listing devices and drivers..."
-  successfulListing: "Successfully listed devices and drivers"
+  long: "Lista wszystkich urządzeń"
+  short: "Lista urządzeń"
+  json: "Wyjście jako JSON"
+  startListing: "Wymienianie urządzeń i sterowników..."
+  successfulListing: "Listowanie urządzeń i sterowników zakończone sukcesem"
 
 install:
   use: "install"
-  long: "Install a driver"
-  short: "Install a driver"
-  startInstallation: "Installing driver..."
-  failedGetDevice: "Failed to get device"
-  failedInstallation: "Failed to install driver"
-  successfulInstallation: "Successfully installed driver"
+  long: "Zainstaluj sterownik"
+  short: "Zainstaluj sterownik"
+  startInstallation: "Instalacja sterownika..."
+  failedGetDevice: "Nie udało się uzyskać urządzenia"
+  failedInstallation: "Nie udało się zainstalować sterownika"
+  successfulInstallation: "Pomyślnie zainstalowano sterownik"
 
 autoInstall:
   use: "auto-install"
-  long: "Auto install the correct drivers for all devices"
-  short: "Auto install correct drivers"
-  startInstallation: "Auto installing drivers for all devices..."
-  failedInstallation: "Failed to install drivers"
-  successfulInstallation: "Successfully installed drivers for all devices"
+  long: "Automatyczna instalacja właściwych sterowników dla wszystkich urządzeń"
+  short: "Automatyczna instalacja prawidłowych sterowników"
+  startInstallation: "Automatyczna instalacja sterowników dla wszystkich urządzeń..."
+  failedInstallation: "Nie udało się zainstalować sterowników"
+  successfulInstallation: "Pomyślnie zainstalowano sterowniki dla wszystkich urządzeń"
