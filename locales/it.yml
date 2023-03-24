@@ -1,29 +1,30 @@
 ikaros:
   use: "ikaros"
-  long: "Ikaros is a command line tool for managing drivers for your devices"
-  short: "Ikaros manages drivers for your devices"
+  long: "Ikaros è uno strumento a riga di comando per la gestione dei driver dei dispositivi"
+  short: "Ikaros gestisce i driver dei dispositivi"
 
 listDevices:
   use: "list-devices"
-  long: "List all devices"
-  short: "List devices"
-  json: "Output as JSON"
-  startListing: "Listing devices and drivers..."
-  successfulListing: "Successfully listed devices and drivers"
+  long: "Elenco di tutti i dispositivi"
+  short: "Elenco dispositivi"
+  json: "Output come JSON"
+  startListing: "Elencando i dispositivi e i driver..."
+  successfulListing: "I dispositivi e i driver sono stati elencati con successo"
 
 install:
   use: "install"
-  long: "Install a driver"
-  short: "Install a driver"
-  startInstallation: "Installing driver..."
-  failedGetDevice: "Failed to get device"
-  failedInstallation: "Failed to install driver"
-  successfulInstallation: "Successfully installed driver"
+  long: "Installa un driver"
+  short: "Installa un driver"
+  startInstallation: "Installazione del driver in corso..."
+  failedGetDevice: "Impossibile ottenere il dispositivo"
+  failedInstallation: "Impossibile installare il driver"
+  successfulInstallation: "Il driver è stato installato con successo"
 
 autoInstall:
   use: "auto-install"
-  long: "Auto install the correct drivers for all devices"
-  short: "Auto install correct drivers"
-  startInstallation: "Auto installing drivers for all devices..."
-  failedInstallation: "Failed to install drivers"
-  successfulInstallation: "Successfully installed drivers for all devices"
+  long: "Installa automaticamente i driver corretti per tutti i dispositivi"
+  short: "Installa automaticamente i driver corretti"
+  startInstallation: "Installando automaticamente i driver per tutti i dispositivi..."
+  failedInstallation: "Impossibile installare i driver"
+  successfulInstallation: "I driver sono stati installati con successo per tutti i\
+    \ dispositivi"
