@@ -1,0 +1,29 @@
+ikaros:
+  use: ""
+  long: ""
+  short: ""
+
+listDevices:
+  use: ""
+  long: ""
+  short: ""
+  json: ""
+  startListing: ""
+  successfulListing: ""
+
+install:
+  use: ""
+  long: ""
+  short: ""
+  startInstallation: ""
+  failedGetDevice: ""
+  failedInstallation: ""
+  successfulInstallation: ""
+
+autoInstall:
+  use: ""
+  long: ""
+  short: ""
+  startInstallation: ""
+  failedInstallation: ""
+  successfulInstallation: ""
