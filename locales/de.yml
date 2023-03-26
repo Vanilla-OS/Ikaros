@@ -15,7 +15,7 @@ listDevices:
 install:
   use: "install"
   long: "Installiere einen Treiber"
-  short: "Install a driver"
+  short: "Installiere einen Treiber"
   startInstallation: "Treiber wird installiert..."
   failedGetDevice: "Failed to get device"
   failedInstallation: "Treiber konnte nicht erfolgreich installiert werden"
