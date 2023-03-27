@@ -1,23 +1,24 @@
 ikaros:
   use: "ikaros"
-  long: "Ikaros is a command line tool for managing drivers for your devices"
-  short: "Ikaros manages drivers for your devices"
+  long: "Ikaros ist ein  Kommandozeilen-Tool zum Verwalten von Treibern für deine\
+    \ Geräte"
+  short: "Ikaros verwaltet Treiber für deine Geräte"
 
 listDevices:
   use: "list-devices"
-  long: "List all devices"
-  short: "List devices"
-  json: "Output as JSON"
-  startListing: "Listing devices and drivers..."
-  successfulListing: "Successfully listed devices and drivers"
+  long: "Alle Geräte auflisten"
+  short: "Geräte auflisten"
+  json: "Ausgabe als JSON"
+  startListing: "Geräte und Treiber werden aufgelistet..."
+  successfulListing: "Geräte und Treiber wurden erfolgreich aufgelistet"
 
 install:
   use: "install"
-  long: "Install a driver"
-  short: "Install a driver"
-  startInstallation: "Installing driver..."
+  long: "Installiere einen Treiber"
+  short: "Installiere einen Treiber"
+  startInstallation: "Treiber wird installiert..."
   failedGetDevice: "Failed to get device"
-  failedInstallation: "Failed to install driver"
+  failedInstallation: "Treiber konnte nicht erfolgreich installiert werden"
   successfulInstallation: "Successfully installed driver"
 
 autoInstall:
