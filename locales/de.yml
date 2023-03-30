@@ -1,6 +1,6 @@
 ikaros:
   use: "ikaros"
-  long: "Ikaros ist ein  Kommandozeilen-Tool zum Verwalten von Treibern für deine\
+  long: "Ikaros ist ein Kommandozeilen-Tool zur Verwaltung von Treibern für deine\
     \ Geräte"
   short: "Ikaros verwaltet Treiber für deine Geräte"
 
@@ -17,14 +17,14 @@ install:
   long: "Installiere einen Treiber"
   short: "Installiere einen Treiber"
   startInstallation: "Treiber wird installiert..."
-  failedGetDevice: "Failed to get device"
-  failedInstallation: "Treiber konnte nicht erfolgreich installiert werden"
+  failedGetDevice: "Gerät kann nicht abgerufen werden"
+  failedInstallation: "Treiber kann nicht installiert werden"
   successfulInstallation: "Successfully installed driver"
 
 autoInstall:
   use: "auto-install"
-  long: "Auto install the correct drivers for all devices"
-  short: "Auto install correct drivers"
-  startInstallation: "Auto installing drivers for all devices..."
-  failedInstallation: "Failed to install drivers"
-  successfulInstallation: "Successfully installed drivers for all devices"
+  long: "Automatische Installation der richtigen Treiber für alle Geräte"
+  short: "Automatische Installation der richtigen Treiber"
+  startInstallation: "Automatische Installation von Treibern für alle Geräte..."
+  failedInstallation: "Installation der Treiber fehlgeschlagen"
+  successfulInstallation: "Treiber für alle Geräte erfolgreich installiert"
