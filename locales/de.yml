@@ -19,7 +19,7 @@ install:
   startInstallation: "Treiber wird installiert..."
   failedGetDevice: "Gerät kann nicht abgerufen werden"
   failedInstallation: "Treiber kann nicht installiert werden"
-  successfulInstallation: "Successfully installed driver"
+  successfulInstallation: "Treiber wurde erfolgreich installiert"
 
 autoInstall:
   use: "auto-install"
