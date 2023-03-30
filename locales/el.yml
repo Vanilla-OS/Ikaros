@@ -1,29 +1,31 @@
 ikaros:
   use: "ikaros"
-  long: "Ikaros is a command line tool for managing drivers for your devices"
-  short: "Ikaros manages drivers for your devices"
+  long: "Το Ikaros είναι ένα εργαλείο γραμμής εντολών για τη διαχείριση των προγραμμάτων\
+    \ οδήγησης των συσκευών σας"
+  short: "Το Ikaros διαχειρίζεται τα προγράμματα οδήγησης των συσκευών σας"
 
 listDevices:
   use: "list-devices"
-  long: "List all devices"
-  short: "List devices"
-  json: "Output as JSON"
-  startListing: "Listing devices and drivers..."
-  successfulListing: "Successfully listed devices and drivers"
+  long: "Προβολή λίστας όλων των συσκευών"
+  short: "Προβολή λίστας συσκευών"
+  json: "Εξαγωγή ως JSON"
+  startListing: "Προβολή λίστας συσκευών και προγραμμάτων οδήγησης..."
+  successfulListing: "Επιτυχής καταγραφή συσκευών και προγραμμάτων οδήγησης"
 
 install:
   use: "install"
-  long: "Install a driver"
-  short: "Install a driver"
-  startInstallation: "Installing driver..."
-  failedGetDevice: "Failed to get device"
-  failedInstallation: "Failed to install driver"
-  successfulInstallation: "Successfully installed driver"
+  long: "Εγκαταστήστε ένα πρόγραμμα οδήγησης"
+  short: "Εγκατάσταση προγραμμάτων οδήγησης"
+  startInstallation: "Εγκατάσταση προγράμματος οδήγησης..."
+  failedGetDevice: "Αποτυχία λήψης συσκευής"
+  failedInstallation: "Αποτυχία εγκατάστασης προγράμματος οδήγησης"
+  successfulInstallation: "Επιτυχής εγκατάσταση προγράμματος οδήγησης"
 
 autoInstall:
   use: "auto-install"
-  long: "Auto install the correct drivers for all devices"
-  short: "Auto install correct drivers"
-  startInstallation: "Auto installing drivers for all devices..."
-  failedInstallation: "Failed to install drivers"
-  successfulInstallation: "Successfully installed drivers for all devices"
+  long: "Αυτόματη εγκατάσταση των σωστών προγραμμάτων οδήγησης για όλες τις συσκευές"
+  short: "Αυτόματη εγκατάσταση σωστών προγραμμάτων οδήγησης"
+  startInstallation: "Αυτόματη εγκατάσταση προγραμμάτων οδήγησης για όλες τις συσκευές..."
+  failedInstallation: "Αποτυχία εγκατάστασης προγραμμάτων οδήγησης"
+  successfulInstallation: "Επιτυχής εγκατάσταση προγραμμάτων οδήγησης για όλες τις\
+    \ συσκευές"
