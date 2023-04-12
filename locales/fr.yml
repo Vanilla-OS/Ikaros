@@ -1,29 +1,31 @@
 ikaros:
   use: "ikaros"
-  long: "Ikaros is a command line tool for managing drivers for your devices"
-  short: "Ikaros manages drivers for your devices"
+  long: "Ikaros est un outil en ligne de commandes qui permet de gérer les pilotes\
+    \ de vos périphériques"
+  short: "Ikaros permet de gérer les pilotes de vos périphériques"
 
 listDevices:
   use: "list-devices"
-  long: "List all devices"
-  short: "List devices"
-  json: "Output as JSON"
-  startListing: "Listing devices and drivers..."
-  successfulListing: "Successfully listed devices and drivers"
+  long: "Lister tous les périphériques"
+  short: "Lister les périphériques"
+  json: "Exporter en JSON"
+  startListing: "Affichage de la liste des périphériques et des pilotes..."
+  successfulListing: "La liste des périphériques et des pilotes a été établie avec\
+    \ succès"
 
 install:
   use: "install"
-  long: "Install a driver"
-  short: "Install a driver"
-  startInstallation: "Installing driver..."
-  failedGetDevice: "Failed to get device"
-  failedInstallation: "Failed to install driver"
-  successfulInstallation: "Successfully installed driver"
+  long: "Installer un pilote"
+  short: "Installer un pilote"
+  startInstallation: "Installation du pilote..."
+  failedGetDevice: "Échec de l'obtention de périphérique"
+  failedInstallation: "Échec de l'installation du pilote"
+  successfulInstallation: "Le pilote a été installé avec succès"
 
 autoInstall:
   use: "auto-install"
-  long: "Auto install the correct drivers for all devices"
-  short: "Auto install correct drivers"
-  startInstallation: "Auto installing drivers for all devices..."
-  failedInstallation: "Failed to install drivers"
-  successfulInstallation: "Successfully installed drivers for all devices"
+  long: "Installation automatique des pilotes appropriés pour tous les périphériques"
+  short: "Installation automatique des pilotes appropriés"
+  startInstallation: "Installation automatique des pilotes pour tous les périphériques..."
+  failedInstallation: "Échec de l'installation des pilotes"
+  successfulInstallation: "Installation des pilotes avec succès pour tous les périphériques"
