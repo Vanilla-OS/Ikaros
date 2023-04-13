@@ -1,0 +1,102 @@
+.TH IKAROS 1 "2023-04-13" "ikaros" "User Manual"
+.SH NAME
+.RS 4
+ikaros - Ikaros আপনার ডিভাইসের ড্রাইভারসমূহ পরিচালনা করে
+.RE
+.SH SYNOPSIS
+.RS 4
+ikaros [command] [flags] [arguments]
+.RE
+.SH DESCRIPTION
+.RS 4
+Ikaros আপনার ডিভাইসের ড্রাইভারসমূহ পরিচালনার জন্য একটি কমান্ড লাইন টুল
+.RE
+.SH OPTIONS
+.SH IKAROS COMMANDS
+.RS 4
+\fBlist-devices\fP
+.RS 4
+ডিভাইসগুলির তালিকা দেখান
+.PP
+.RE
+\fBinstall\fP
+.RS 4
+একটি ড্রাইভার ইনস্টল করুন
+.PP
+.RE
+\fBauto-install\fP
+.RS 4
+সঠিক ড্রাইভারগুলি স্বয়ংক্রিয়ভাবে ইনস্টল করুন
+.PP
+.RE
+.RE
+.SH AUTHORS
+.PP
+Written by Vanilla OS contributors\&.
+.SH REPORT BUGS TO
+.PP
+https://github\&.com/vanilla-os/ikaros/issues
+.SH LICENSE
+.PP
+GPLv3+: GNU GPL version 3 or later <http://gnu\&.org/licenses/gpl\&.html>\&.
+.SH IKAROS SUBCOMMANDS
+.SH SUBCOMMAND LIST-DEVICES
+.RS 4
+ডিভাইসগুলির তালিকা দেখান
+.RE
+.SS SYNOPSIS
+.RS 4
+\fBlist-devices\fP [command] [flags] [arguments]
+.RE
+.SS DESCRIPTION
+.RS 4
+.TP 4
+সকল ডিভাইসের তালিকা দেখান
+.RE
+.SS OPTIONS
+  -j, --json   JSON হিসাবে আউটপুট দেখান
+.PP
+.SS GLOBAL OPTIONS
+.SS EXAMPLES
+.RS 4
+ikaros list-devices
+.RE
+.SH SUBCOMMAND INSTALL
+.RS 4
+একটি ড্রাইভার ইনস্টল করুন
+.RE
+.SS SYNOPSIS
+.RS 4
+\fBinstall\fP [command] [flags] [arguments]
+.RE
+.SS DESCRIPTION
+.RS 4
+.TP 4
+একটি ড্রাইভার ইনস্টল করুন
+.RE
+.SS OPTIONS
+.SS GLOBAL OPTIONS
+.SS EXAMPLES
+.RS 4
+ikaros install
+.RE
+.SH SUBCOMMAND AUTO-INSTALL
+.RS 4
+সঠিক ড্রাইভারগুলি স্বয়ংক্রিয়ভাবে ইনস্টল করুন
+.RE
+.SS SYNOPSIS
+.RS 4
+\fBauto-install\fP [command] [flags] [arguments]
+.RE
+.SS DESCRIPTION
+.RS 4
+.TP 4
+সকল ডিভাইসের জন্য সঠিক ড্রাইভারগুলি স্বয়ংক্রিয়ভাবে ইনস্টল করুন
+.RE
+.SS OPTIONS
+.SS GLOBAL OPTIONS
+.SS EXAMPLES
+.RS 4
+ikaros auto-install
+.RE
+
