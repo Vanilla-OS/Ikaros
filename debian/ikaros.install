@@ -1,3 +1,15 @@
 config/config.json /usr/share/ikaros/
 man/ikaros.1 /usr/share/man/man1
+man/bn/ikaros.1 /usr/share/man/bn/man1
+man/de/ikaros.1 /usr/share/man/de/man1
+man/el/ikaros.1 /usr/share/man/el/man1
+man/eo/ikaros.1 /usr/share/man/eo/man1
+man/es/ikaros.1 /usr/share/man/es/man1
+man/fr/ikaros.1 /usr/share/man/fr/man1
+man/hu/ikaros.1 /usr/share/man/hu/man1
+man/it/ikaros.1 /usr/share/man/it/man1
 man/nl/ikaros.1 /usr/share/man/nl/man1
+man/pl/ikaros.1 /usr/share/man/pl/man1
+man/ro/ikaros.1 /usr/share/man/ro/man1
+man/sv/ikaros.1 /usr/share/man/sv/man1
+man/tr/ikaros.1 /usr/share/man/tr/man1
