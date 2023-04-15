@@ -1,6 +1,8 @@
 <div align="center">
-  <h1 align="center">Ikaros</h1>
-  
+<img src="assets/ikaros.png?raw=true#gh-dark-mode-only" height="40">
+<img src="assets/ikaros-mono.png?raw=true#gh-light-mode-only" height="40">
+
+---
 [![Translation Status][weblate-image]][weblate-url]
 [![build result][build-image]][build-url]
 
