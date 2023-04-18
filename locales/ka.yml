@@ -1,29 +1,30 @@
 ikaros:
   use: "ikaros"
-  long: "Ikaros is a command line tool for managing drivers for your devices"
-  short: "Ikaros manages drivers for your devices"
+  long: "Ikaros არის ბრძანების ხაზის ინსტრუმენტი თქვენი მოწყობილობების დრაივერების\
+    \ მართვისთვის"
+  short: "Ikaros მართავს დრაივერებს თქვენი მოწყობილობებისთვის"
 
 listDevices:
   use: "list-devices"
-  long: "List all devices"
-  short: "List devices"
-  json: "Output as JSON"
-  startListing: "Listing devices and drivers..."
-  successfulListing: "Successfully listed devices and drivers"
+  long: "მოწყობილობების სია"
+  short: "მოწყობილობების სია"
+  json: "JSON ფორმატში გამოტანა"
+  startListing: "მოწყობილობებისა და დრაივერების ჩამონათვალი..."
+  successfulListing: "წარმატებით ჩამოთვლილი მოწყობილობები და დრაივერები"
 
 install:
   use: "install"
   long: "Install a driver"
-  short: "Install a driver"
-  startInstallation: "Installing driver..."
-  failedGetDevice: "Failed to get device"
-  failedInstallation: "Failed to install driver"
-  successfulInstallation: "Successfully installed driver"
+  short: "დრაივერის დაყენება"
+  startInstallation: "დრაივერის დაყენება..."
+  failedGetDevice: "მოწყობილობის მიღების შეცდომა"
+  failedInstallation: "დრაივერის დაყენების შეცდომა"
+  successfulInstallation: "დრაივერის დაყენება წარმატებულია"
 
 autoInstall:
   use: "auto-install"
-  long: "Auto install the correct drivers for all devices"
-  short: "Auto install correct drivers"
-  startInstallation: "Auto installing drivers for all devices..."
-  failedInstallation: "Failed to install drivers"
-  successfulInstallation: "Successfully installed drivers for all devices"
+  long: "ყველა მოწყობილობის დრაივერის ავტომატური დაყენება"
+  short: "სწორი დრაივერების ავტომატური დაყენება"
+  startInstallation: "ყველა მოწყობილობის დრაივერის ავტომატური დაყენება..."
+  failedInstallation: "დრაივერების დაყენების შეცდომა"
+  successfulInstallation: "ყველა მოწყობილობისთვის დრაივერების დაყენება წარმატებულია"
