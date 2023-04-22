@@ -6,8 +6,8 @@ ikaros:
 
 listDevices:
   use: "list-devices"
-  long: "Lista de dispositivos"
-  short: "Listar dispositivos"
+  long: "Listar todos los dispositivos"
+  short: "Lista de dispositivos"
   json: "Salida como JSON"
   startListing: "Listado de dispositivos y controladores..."
   successfulListing: "Dispositivos y controladores listados de forma correcta"
@@ -16,7 +16,7 @@ install:
   use: "install"
   long: "Instalar un controlador"
   short: "Instalar un controlador"
-  startInstallation: "Instalando controlador..."
+  startInstallation: "Instalando driver..."
   failedGetDevice: "Error al obtener el dispositivo"
   failedInstallation: "Error al instalar el controlador"
   successfulInstallation: "Controlador instalado correctamente"
@@ -24,7 +24,7 @@ install:
 autoInstall:
   use: "auto-install"
   long: "Instala automáticamente los controladores correctos para todos los dispositivos"
-  short: "Instalar automáticamente los controladores correctos"
+  short: "Instalación automática de los controladores correctos"
   startInstallation: "Instalación automática de controladores para todos los dispositivos..."
   failedInstallation: "Error al instalar los controladores"
   successfulInstallation: "Controladores instalados correctamente para todos los dispositivos"
