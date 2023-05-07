@@ -1,29 +1,30 @@
 ikaros:
   use: "ikaros"
-  long: "Ikaros is a command line tool for managing drivers for your devices"
-  short: "Ikaros manages drivers for your devices"
+  long: "Ikaros - это инструмент командной строки для управления драйверами для ваших\
+    \ устройств"
+  short: "Ikaros управляет драйверами для ваших устройств"
 
 listDevices:
   use: "list-devices"
-  long: "List all devices"
-  short: "List devices"
-  json: "Output as JSON"
-  startListing: "Listing devices and drivers..."
-  successfulListing: "Successfully listed devices and drivers"
+  long: "Перечислите все устройства"
+  short: "Список устройств"
+  json: "Вывод в формате JSON"
+  startListing: "Перечисление устройств и драйверов..."
+  successfulListing: "Успешно составлен список устройств и драйверов"
 
 install:
   use: "install"
-  long: "Install a driver"
-  short: "Install a driver"
-  startInstallation: "Installing driver..."
-  failedGetDevice: "Failed to get device"
-  failedInstallation: "Failed to install driver"
-  successfulInstallation: "Successfully installed driver"
+  long: "Установите драйвер"
+  short: "Установите драйвер"
+  startInstallation: "Установка драйвера..."
+  failedGetDevice: "Не удалось получить устройство"
+  failedInstallation: "Не удалось установить драйвер"
+  successfulInstallation: "Успешная установка драйвера"
 
 autoInstall:
   use: "auto-install"
-  long: "Auto install the correct drivers for all devices"
-  short: "Auto install correct drivers"
-  startInstallation: "Auto installing drivers for all devices..."
-  failedInstallation: "Failed to install drivers"
-  successfulInstallation: "Successfully installed drivers for all devices"
+  long: "Автоматическая установка правильных драйверов для всех устройств"
+  short: "Автоматическая установка правильных драйверов"
+  startInstallation: "Автоматическая установка драйверов для всех устройств..."
+  failedInstallation: "Не удалось установить драйверы"
+  successfulInstallation: "Успешная установка драйверов для всех устройств"
