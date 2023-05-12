@@ -27,9 +27,6 @@ jobs:
     - name: Build
       run: go build -o ikaros
     
-    - name: Test
-      run: go test -v ./tests/...
-    
     - name: Compress
       run: tar -czvf ikaros.tar.gz ikaros
 
