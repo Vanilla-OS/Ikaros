@@ -1,8 +1,8 @@
 name: Go
 
 on:
-  push:
-    branches: [ "main" ]
+  pull_request_target:
+    types: [opened, synchronize, reopened]
 
 jobs:
 
@@ -26,15 +26,3 @@ jobs:
 
     - name: Build
       run: go build -o ikaros
-    
-    - name: Compress
-      run: tar -czvf ikaros.tar.gz ikaros
-
-    - uses: softprops/action-gh-release@v1
-      with:
-        token: "${{ secrets.GITHUB_TOKEN }}"
-        tag_name: "continuous"
-        prerelease: true
-        name: "Continuous Build"
-        files: |
-          ikaros.tar.gz
