@@ -103,10 +103,17 @@ func (m DriversManager) GetDeviceByID(id string) (Device, error) {
 	return Device{}, fmt.Errorf("device not found")
 }
 
-func (m DriversManager) AutoInstallDrivers() error {
+func (m DriversManager) AutoInstallDrivers(listonly bool) error {
 	devicesMap := m.GetDevices()
 	for _, devices := range devicesMap {
 		for _, device := range devices {
+			if listonly {
+				drivers := PkgListDrivers(device)
+				if len(drivers) > 0 {
+					fmt.Printf("%s ", drivers[0])
+				}
+				continue
+			}
 			err := m.InstallDriver(device)
 			if err != nil {
 				return err
