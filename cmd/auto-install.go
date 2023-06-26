@@ -15,6 +15,7 @@ func NewAutoInstallCmd() *cmdr.Command {
 		autoInstall,
 	)
 	cmd.Flags().BoolP("list-only", "l", false, ikaros.Trans("autoInstall.listOnly"))
+	cmd.Args = cobra.MatchAll(cobra.ExactArgs(0), cobra.OnlyValidArgs)
 	cmd.Example = "ikaros auto-install"
 
 	return cmd
