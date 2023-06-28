@@ -4,13 +4,9 @@
 
 ---
 [![Translation Status][weblate-image]][weblate-url]
-[![build result][build-image]][build-url]
 
 [weblate-url]: https://hosted.weblate.org/engage/vanilla-os/
 [weblate-image]: https://hosted.weblate.org/widgets/vanilla-os/-/apx/svg-badge.svg
-[weblate-status-image]: https://hosted.weblate.org/widgets/vanilla-os/-/ikaros/multi-auto.svg
-[build-image]:https://build.opensuse.org/projects/home:fabricators:orchid/packages/ikaros/badge.svg?type=default
-[build-url]: https://build.opensuse.org/package/show/home:fabricators:orchid/ikaros
   
 Ikaros is a drivers backend for Vanilla OS.
 
@@ -43,8 +39,6 @@ Use "ikaros [command] --help" for more information about a command.
 ## Translations
 
 Contribute translations for the manpage and help page in [Weblate](https://hosted.weblate.org/projects/vanilla-os/ikaros).
-
-[![Translation Status][weblate-status-image]][weblate-url]
 
 ### Generating man pages for translations
 
