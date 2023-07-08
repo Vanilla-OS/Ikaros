@@ -1,29 +1,30 @@
 ikaros:
   use: "ikaros"
-  long: "Ikaros is a command line tool for managing drivers for your devices"
-  short: "Ikaros manages drivers for your devices"
+  long: "Ikaros er et kommandolinjeværktøj, til administration af drivere til dine
+    enheder"
+  short: "Ikaros håndterer drivere til dine enheder"
 
 listDevices:
   use: "list-devices"
-  long: "List all devices"
-  short: "List devices"
-  json: "Output as JSON"
-  startListing: "Listing devices and drivers..."
-  successfulListing: "Successfully listed devices and drivers"
+  long: "Opfør liste over alle enheder"
+  short: "Opfør liste over enheder"
+  json: "Udtog som JSON"
+  startListing: "Opfører enheder og drivere..."
+  successfulListing: "Opførsel af enheder og drivere lykkedes"
 
 install:
   use: "install"
-  long: "Install a driver"
-  short: "Install a driver"
-  startInstallation: "Installing driver..."
-  failedGetDevice: "Failed to get device"
-  failedInstallation: "Failed to install driver"
-  successfulInstallation: "Successfully installed driver"
+  long: "Installér en driver"
+  short: "Installér en driver"
+  startInstallation: "Installerer driver..."
+  failedGetDevice: "Fremskaffelse af enhed slog fejl"
+  failedInstallation: "Installation af driver slog fejl"
+  successfulInstallation: "Installation af driver lykkedes"
 
 autoInstall:
   use: "auto-install"
-  long: "Auto install the correct drivers for all devices"
-  short: "Auto install correct drivers"
-  startInstallation: "Auto installing drivers for all devices..."
-  failedInstallation: "Failed to install drivers"
-  successfulInstallation: "Successfully installed drivers for all devices"
+  long: "Auto-installér de korrekte drivere til alle enheder"
+  short: "Auto-installér korrekte drivere"
+  startInstallation: "Auto-installerer drivere til alle enheder..."
+  failedInstallation: "Installation af drivere slog fejl"
+  successfulInstallation: "Installation af drivere lykkedes for alle enheder"
