@@ -1,25 +1,25 @@
 ikaros:
   use: "ikaros"
-  long: "Ikaros - это инструмент командной строки для управления драйверами для ваших\
-    \ устройств"
+  long: "Ikaros - это инструмент командной строки для управления драйверами для ваших
+    устройств"
   short: "Ikaros управляет драйверами для ваших устройств"
 
 listDevices:
   use: "list-devices"
-  long: "Перечислите все устройства"
+  long: "Список всех устройств"
   short: "Список устройств"
   json: "Вывод в формате JSON"
-  startListing: "Перечисление устройств и драйверов..."
+  startListing: "Подготовка списка устройств и драйверов..."
   successfulListing: "Успешно составлен список устройств и драйверов"
 
 install:
   use: "install"
-  long: "Установите драйвер"
-  short: "Установите драйвер"
+  long: "Установить драйвер"
+  short: "Установить драйвер"
   startInstallation: "Установка драйвера..."
   failedGetDevice: "Не удалось получить устройство"
   failedInstallation: "Не удалось установить драйвер"
-  successfulInstallation: "Успешная установка драйвера"
+  successfulInstallation: "Драйвер установлен успешно"
 
 autoInstall:
   use: "auto-install"
@@ -27,4 +27,4 @@ autoInstall:
   short: "Автоматическая установка правильных драйверов"
   startInstallation: "Автоматическая установка драйверов для всех устройств..."
   failedInstallation: "Не удалось установить драйверы"
-  successfulInstallation: "Успешная установка драйверов для всех устройств"
+  successfulInstallation: "Драйвера для всех устройств установлены успешно"

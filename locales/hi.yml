@@ -1,29 +1,30 @@
 ikaros:
   use: "ikaros"
-  long: "Ikaros is a command line tool for managing drivers for your devices"
-  short: "Ikaros manages drivers for your devices"
+  long: "Ikaros आपके उपकरणों के लिए ड्राइवरों के प्रबंधन के लिए एक कमांड लाइन टूल
+    है"
+  short: "Ikaros आपके उपकरणों के लिए ड्राइवरों का प्रबंधन करता है"
 
 listDevices:
   use: "list-devices"
-  long: "List all devices"
-  short: "List devices"
-  json: "Output as JSON"
-  startListing: "Listing devices and drivers..."
-  successfulListing: "Successfully listed devices and drivers"
+  long: "सभी उपकरणों की सूची बनाएं"
+  short: "उपकरणों की सूची बनाएं"
+  json: "JSON के रूप में आउटपुट"
+  startListing: "उपकरणों और ड्राइवरों की सूची बनाना..।"
+  successfulListing: "सफलतापूर्वक सूचीबद्ध डिवाइस और ड्राइवर"
 
 install:
   use: "install"
-  long: "Install a driver"
-  short: "Install a driver"
-  startInstallation: "Installing driver..."
-  failedGetDevice: "Failed to get device"
-  failedInstallation: "Failed to install driver"
-  successfulInstallation: "Successfully installed driver"
+  long: "ड्राइवर स्थापित करें"
+  short: "ड्राइवर स्थापित करें"
+  startInstallation: "ड्राइवर स्थापित कर रहा है..।"
+  failedGetDevice: "डिवाइस प्राप्त करने में विफल"
+  failedInstallation: "ड्राइवर स्थापित करने में विफल"
+  successfulInstallation: "सफलतापूर्वक स्थापित ड्राइवर"
 
 autoInstall:
   use: "auto-install"
-  long: "Auto install the correct drivers for all devices"
-  short: "Auto install correct drivers"
-  startInstallation: "Auto installing drivers for all devices..."
-  failedInstallation: "Failed to install drivers"
-  successfulInstallation: "Successfully installed drivers for all devices"
+  long: "ऑटो सभी उपकरणों के लिए सही ड्राइवरों को स्थापित करें"
+  short: "ऑटो सही ड्राइवरों को स्थापित करें"
+  startInstallation: "सभी उपकरणों के लिए ऑटो ड्राइवर स्थापित करना..।"
+  failedInstallation: "ड्राइवरों को स्थापित करने में विफल"
+  successfulInstallation: "सभी उपकरणों के लिए सफलतापूर्वक स्थापित ड्राइवर"
