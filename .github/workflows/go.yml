@@ -30,6 +30,9 @@ jobs:
     - name: Compress
       run: tar -czvf ikaros.tar.gz ikaros
 
+    - name: Compress-manpage
+      run: tar -czvf ikaros-man.tar.gz man/man1/ikaros.1
+
     - uses: softprops/action-gh-release@v1
       with:
         token: "${{ secrets.GITHUB_TOKEN }}"
@@ -38,3 +41,4 @@ jobs:
         name: "Continuous Build"
         files: |
           ikaros.tar.gz
+          ikaros-man.tar.gz
