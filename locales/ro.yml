@@ -1,14 +1,14 @@
 ikaros:
   use: "ikaros"
-  long: "Ikaros este un instrument de linie de comandă pentru gestionarea driverelor\
-    \ pentru dispozitivele dvs"
+  long: "Ikaros este un instrument de linie de comandă pentru gestionarea driverelor
+    pentru dispozitivele dvs"
   short: "Ikaros gestionează drivere pentru dispozitivele dvs"
 
 listDevices:
   use: "list-devices"
   long: "Listați toate dispozitivele"
   short: "Listați dispozitivele"
-  json: "Ieșire ca JSON"
+  json: "scoate rezultatul în format JSON"
   startListing: "Se afișează dispozitive și drivere..."
   successfulListing: "Dispozitive și drivere listate cu succes"
 
