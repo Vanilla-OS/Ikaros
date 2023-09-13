@@ -1,14 +1,14 @@
 ikaros:
   use: "ikaros"
-  long: "Ikaros ist ein Kommandozeilen-Tool zur Verwaltung von Treibern für deine\
-    \ Geräte"
+  long: "Ikaros ist ein Kommandozeilen-Tool zur Verwaltung von Treibern für deine
+    Geräte"
   short: "Ikaros verwaltet Treiber für deine Geräte"
 
 listDevices:
   use: "list-devices"
   long: "Alle Geräte auflisten"
   short: "Geräte auflisten"
-  json: "Ausgabe als JSON"
+  json: "gibt das Ergebnis im JSON-Format aus"
   startListing: "Geräte und Treiber werden aufgelistet..."
   successfulListing: "Geräte und Treiber wurden erfolgreich aufgelistet"
 
