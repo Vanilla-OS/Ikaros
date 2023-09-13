@@ -1,14 +1,14 @@
 ikaros:
   use: "ikaros"
-  long: "Ikaros is een opdrachtregelprogramma voor het beheer van stuurprogramma's\
-    \ voor uw apparaten"
+  long: "Ikaros is een opdrachtregelprogramma voor het beheer van stuurprogramma's
+    voor uw apparaten"
   short: "Ikaros beheert de drivers voor uw apparaten"
 
 listDevices:
   use: "list-devices"
   long: "Lijst van alle apparaten tonen"
   short: "Apparatenlijst"
-  json: "JSON-uitvoer"
+  json: "Resultaat als JSON-uitvoer"
   startListing: "Lijst maken van apparaten en stuurprogramma's…"
   successfulListing: "Lijst van apparaten en stuurprogramma's succesvol gemaakt"
 
