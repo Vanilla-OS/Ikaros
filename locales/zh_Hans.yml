@@ -7,7 +7,7 @@ listDevices:
   use: "list-devices"
   long: "列出所有设备"
   short: "列出设备"
-  json: "输出为 JSON 格式"
+  json: "输出结果为 JSON 格式"
   startListing: "正在列出设备和驱动程序…"
   successfulListing: "已成功列出设备和驱动程序"
 

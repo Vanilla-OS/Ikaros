@@ -7,7 +7,7 @@ listDevices:
   use: "list-devices"
   long: "Lista alla enheter"
   short: "Lista enheter"
-  json: "Utdata som JSON"
+  json: "Utdata av resultatet i JSON-format"
   startListing: "Lista enheter och drivrutiner..."
   successfulListing: "Listade framgångsrikt enheter och drivrutiner"
 

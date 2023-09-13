@@ -1,14 +1,14 @@
 ikaros:
   use: "ikaros"
-  long: "Ikaros es una herramienta de línea de comandos para gestionar los controladores\
-    \ de tus dispositivos"
+  long: "Ikaros es una herramienta de línea de comandos para gestionar los controladores
+    de tus dispositivos"
   short: "Ikaros gestiona los controladores de tus dispositivos"
 
 listDevices:
   use: "list-devices"
   long: "Listar todos los dispositivos"
   short: "Lista de dispositivos"
-  json: "Salida como JSON"
+  json: "generar el resultado en formato JSON"
   startListing: "Listado de dispositivos y controladores..."
   successfulListing: "Dispositivos y controladores listados de forma correcta"
 

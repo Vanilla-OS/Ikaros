@@ -1,17 +1,17 @@
 ikaros:
   use: "ikaros"
-  long: "Ikaros est un outil en ligne de commandes qui permet de gérer les pilotes\
-    \ de vos périphériques"
+  long: "Ikaros est un outil en ligne de commandes qui permet de gérer les pilotes
+    de vos périphériques"
   short: "Ikaros permet de gérer les pilotes de vos périphériques"
 
 listDevices:
   use: "list-devices"
   long: "Lister tous les périphériques"
   short: "Lister les périphériques"
-  json: "Exporter en JSON"
+  json: "exporter le résultat au format JSON"
   startListing: "Affichage de la liste des périphériques et des pilotes..."
-  successfulListing: "La liste des périphériques et des pilotes a été établie avec\
-    \ succès"
+  successfulListing: "La liste des périphériques et des pilotes a été établie avec
+    succès"
 
 install:
   use: "install"
