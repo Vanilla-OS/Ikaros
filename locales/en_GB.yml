@@ -7,7 +7,7 @@ listDevices:
   use: "list-devices"
   long: "List all devices"
   short: "List devices"
-  json: "Output as JSON"
+  json: "output the result in JSON format"
   startListing: "Listing devices and drivers..."
   successfulListing: "Successfully listed devices and drivers"
 
