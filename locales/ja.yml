@@ -1,15 +1,15 @@
 ikaros:
   use: "ikaros"
-  long: "Ikaros is a command line tool for managing drivers for your devices"
+  long: "Ikarosは、デバイスのドライバを管理するためのコマンドラインツールです"
   short: "Ikarosはデバイスのドライバーを管理します"
 
 listDevices:
   use: "list-devices"
   long: "すべてのデバイスを表示"
-  short: "List devices"
-  json: "JSONとして出力"
+  short: "デバイスを一覧表示"
+  json: "JSON形式で結果を出力"
   startListing: "デバイスとドライバーを表示しています..."
-  successfulListing: "デバイスとドライバーの表示に成功したました"
+  successfulListing: "デバイスとドライバーの表示に成功しました"
 
 install:
   use: "install"

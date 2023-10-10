@@ -1,11 +1,11 @@
 ikaros:
   use: "ikaros"
-  long: "Ikaros is a command line tool for managing drivers for your devices"
-  short: "Ikaros manages drivers for your devices"
+  long: "Ikaros adalah alat command line untuk mengelola driver untuk perangkat Anda"
+  short: "Ikaros mengelola driver untuk perangkat Anda"
 
 listDevices:
   use: "list-devices"
-  long: "List all devices"
+  long: "Daftar semua perangkat"
   short: "List devices"
   json: "Output as JSON"
   startListing: "Listing devices and drivers..."

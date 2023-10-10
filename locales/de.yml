@@ -8,7 +8,7 @@ listDevices:
   use: "list-devices"
   long: "Alle Geräte auflisten"
   short: "Geräte auflisten"
-  json: "gibt das Ergebnis im JSON-Format aus"
+  json: "Ausgabe des Ergebnisses im JSON Format"
   startListing: "Geräte und Treiber werden aufgelistet..."
   successfulListing: "Geräte und Treiber wurden erfolgreich aufgelistet"
 
