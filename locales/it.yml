@@ -7,7 +7,7 @@ listDevices:
   use: "list-devices"
   long: "Elenco di tutti i dispositivi"
   short: "Elenco dispositivi"
-  json: "Output come JSON"
+  json: "Esporta il risultato in formato JSON"
   startListing: "Elencando i dispositivi e i driver..."
   successfulListing: "I dispositivi e i driver sono stati elencati con successo"
 
@@ -26,5 +26,5 @@ autoInstall:
   short: "Installa automaticamente i driver corretti"
   startInstallation: "Installando automaticamente i driver per tutti i dispositivi..."
   failedInstallation: "Impossibile installare i driver"
-  successfulInstallation: "I driver sono stati installati con successo per tutti i\
-    \ dispositivi"
+  successfulInstallation: "I driver sono stati installati con successo per tutti i
+    dispositivi"
