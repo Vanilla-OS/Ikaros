@@ -1,22 +1,22 @@
 ikaros:
   use: "ikaros"
-  long: "Ikaros is a command line tool for managing drivers for your devices"
+  long: "Ikaros estas komandlinia ilo por administri zorgilojn por viaj aparatoj"
   short: "Ikaros administras zorgilojn por viaj aparatoj"
 
 listDevices:
   use: "list-devices"
   long: "Listigi ĉiujn aparatojn"
   short: "Listigi aparatojn"
-  json: "Eligi kiel JSON"
+  json: "eligi la rezulton kiel JSON"
   startListing: "Listigante aparatojn kaj zorgilojn…"
-  successfulListing: "Successfully listed devices and drivers"
+  successfulListing: "Sukcese listigis aparatojn kaj zorgilojn"
 
 install:
   use: "install"
   long: "Instali zorgilon"
   short: "Instali zorgilon"
   startInstallation: "Instalante zorgilon…"
-  failedGetDevice: "Failed to get device"
+  failedGetDevice: "Malsukcesis akiri aparaton"
   failedInstallation: "Malsukcesis instali zorgilon"
   successfulInstallation: "Zorgilo sukcese instaliĝis"
 
@@ -26,4 +26,4 @@ autoInstall:
   short: "Aŭtomate instali taŭgajn zorgilojn"
   startInstallation: "Aŭtomate instalante zorgilojn por ĉiuj aparatoj…"
   failedInstallation: "Malsukcesis instali zorgilojn"
-  successfulInstallation: "Successfully installed drivers for all devices"
+  successfulInstallation: "Sukcese instalis zorgilojn por ĉiuj aparatoj"
