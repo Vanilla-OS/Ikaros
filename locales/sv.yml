@@ -1,24 +1,24 @@
 ikaros:
   use: "ikaros"
-  long: "Ikaros är ett kommandoradsverktyg för hantering av drivrutiner för dina enheter."
+  long: "Ikaros är ett kommandorverktyg för hantering av drivrutiner för dina enheter."
   short: "Ikaros hanterar drivrutiner för dina enheter"
 
 listDevices:
   use: "list-devices"
   long: "Lista alla enheter"
   short: "Lista enheter"
-  json: "Utdata av resultatet i JSON-format"
+  json: "utdata av resultatet i JSON-format"
   startListing: "Lista enheter och drivrutiner..."
-  successfulListing: "Listade framgångsrikt enheter och drivrutiner"
+  successfulListing: "Listade enheter och drivrutiner korrekt"
 
 install:
   use: "install"
   long: "Installera en drivrutin"
   short: "Installera en drivrutin"
   startInstallation: "Installerar drivrutin..."
-  failedGetDevice: "Misslyckades med att hämta enhet"
+  failedGetDevice: "Misslyckades med att hitta enhet"
   failedInstallation: "Misslyckades med att installera drivrutin"
-  successfulInstallation: "Drivrutinen installerades framgångsrikt"
+  successfulInstallation: "Drivrutinen installerades korrekt"
 
 autoInstall:
   use: "auto-install"
