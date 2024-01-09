@@ -13,7 +13,7 @@ listDevices:
 
 install:
   use: "install"
-  long: "Install a driver"
+  long: "安裝驅動程式"
   short: "安裝驅動程式"
   startInstallation: "正在安裝驅動程式…"
   failedGetDevice: "無法取得裝置"
