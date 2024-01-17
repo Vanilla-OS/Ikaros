@@ -6,10 +6,10 @@ ikaros:
 listDevices:
   use: "list-devices"
   long: "Daftar semua perangkat"
-  short: "List devices"
-  json: "Output as JSON"
-  startListing: "Listing devices and drivers..."
-  successfulListing: "Successfully listed devices and drivers"
+  short: "Daftar perangkat"
+  json: "Output hasilnya dalam format JSON"
+  startListing: "Mencantumkan perangkat dan driver..."
+  successfulListing: "Perangkat dan driver yang berhasil didaftarkan"
 
 install:
   use: "install"

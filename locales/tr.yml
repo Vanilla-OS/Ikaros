@@ -1,14 +1,14 @@
 ikaros:
   use: "ikaros"
-  long: "Ikaros, cihazlarınızın sürücülerini yönetmek için kullanılan bir komut satırı\
-    \ aracıdır"
+  long: "Ikaros, cihazlarınızın sürücülerini yönetmek için kullanılan bir komut satırı
+    aracıdır"
   short: "Ikaros cihazlarınız için sürücüleri yönetir"
 
 listDevices:
   use: "list-devices"
   long: "Tüm cihazları listele"
   short: "Cihazları listeleyin"
-  json: "JSON olarak çıktı"
+  json: "Sonucu JSON formatında alın"
   startListing: "Aygıtlar ve sürücüler listeleniyor..."
   successfulListing: "Aygıtlar ve sürücüler başarıyla listelendi"
 
