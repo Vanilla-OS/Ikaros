@@ -43,3 +43,21 @@ Contribute translations for the manpage and help page in [Weblate](https://hoste
 ### Generating man pages for translations
 
 Once the translation is complete in Weblate and the changes committed, clone the repository using `git` and perform `go build`, create a directory using the `mkdir man/<language_code>` command, and execute this command `LANG=<language_code> ./ikaros man > man/<language_code>/ikaros.1`. Open a PR for the generated manpage here.
+
+## Use of Generative AI
+
+Maintainers may use generative AI tools as assistants while working on Ikaros. Non-trivial assisted commits disclose the tool, model, and scope of the work.
+
+AI tools may assist with code comments, documentation, repetitive code, and issue triage. Maintainers make project decisions and review every assisted change before it is merged.
+
+Use these trailers for non-trivial assisted commits:
+
+```plain
+Assisted-by: <tool>:<model-version>
+AI-Scope: <what the tool generated and the prompt or a short prompt summary>
+```
+
+Single-line completions, renames, and formatting changes do not need trailers.
+
+Coding agents must also follow [AGENTS.md](AGENTS.md) before changing files,
+creating commits, or opening pull requests.
